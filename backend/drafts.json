@@ -1,0 +1,17 @@
+[
+  {
+    "sessionId": "1766683753628-5aalzxtvm2",
+    "formData": {
+      "websiteType": "basic",
+      "designLevel": "standard",
+      "cms": "",
+      "extraFeatures": [],
+      "email": "",
+      "phone": "12345678"
+    },
+    "timestamp": "2025-12-25T18:50:16.590Z",
+    "status": "draft",
+    "createdAt": "2025-12-25T17:35:51.749Z",
+    "updatedAt": "2025-12-25T18:50:16.593Z"
+  }
+]

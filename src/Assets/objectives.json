@@ -1,0 +1,32 @@
+[
+  {
+    "id": "main",
+    "title": "Core Objective",
+    "description": "Driving innovation and excellence in all our endeavors.",
+    "isMain": true
+  },
+ 
+  {
+    "id": "customer",
+    "title": "Customer Focus",
+    "description": "Prioritizing our clients' needs and "
+  },
+  {
+    "id": "sustainability",
+    "title": "Sustainability",
+    "description": "Committing to eco-friendly practices and long-"
+  },
+  {
+    "id": "growth",
+    "title": "Growth",
+    "description": "Expanding our reach and capabilities to ."
+  }
+  ,
+   {
+    "id": "innovation",
+    "title": "Innovation",
+    "description": "Continuously pushing the boundaries of ."
+  }
+]
+
+
