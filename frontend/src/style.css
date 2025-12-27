@@ -168,8 +168,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 50 px !important;
+  width: 60 px !important;
 }
 
 .navbar-nav .nav-link {
