@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import Lottie from "lottie-react";
 import Tilt from "react-parallax-tilt";
+import build from "../../Assets/lotties/build.json";
 
 function Home2() {
   return (
@@ -13,7 +14,10 @@ function Home2() {
               Our <span className="purple"> Policy </span> 
             </h1>
             <p className="home-about-body">
-              Mercy Software Services delivers modern, reliable, and tailored web solutions for businesses seeking a strong and efficient online presence. We specialize in <b className="purple">website development</b>, <b className="purple">CMS integration</b>, and <b className="purple">custom admin dashboards</b>, with a focus on clarity, performance, and scalability.
+              Mercy Software Services delivers modern, reliable, and tailored web solutions for businesses seeking a strong and efficient online presence. We specialize in 
+              <b className="purple">website development</b>,
+               <b className="purple">CMS integration</b>, and <b className="purple">custom admin dashboards</b>
+               , with a focus on clarity, performance, and scalability.
               <br />
               <br />
               Every project is approached with a practical mindset, ensuring solutions that are easy to manage, aligned with business goals, and built to grow over time.
@@ -21,7 +25,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <Lottie animationData={build} loop={true} style={{ maxWidth: '300px', margin: '0 auto' }} />
             </Tilt>
           </Col>
         </Row>

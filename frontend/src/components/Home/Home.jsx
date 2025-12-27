@@ -92,7 +92,7 @@ function Home() {
               </li> */}
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="whatsapp.url/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -102,7 +102,7 @@ function Home() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/mercy_software_services/  "
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

@@ -146,10 +146,10 @@ Phone: ${payload.phone || 'Not provided'}
         <Row className="align-items-center">
           <Col md={7}>
             <h1 style={{ fontSize: "3rem", paddingBottom: "20px", color: "white" }}>
-              Discover My <strong className="purple">Services</strong>
+              Discover Our <strong className="purple">Services</strong>
             </h1>
             <p style={{ color: "white", fontSize: "1.2rem", textAlign: "justify" }}>
-              Explore a collection of innovative services showcasing my skills in web development, mobile apps, and more. Each service reflects my passion for creating impactful solutions.
+              Explore a collection of services designed to elevate your digital presence. From  web development to comprehensive CMS solutions, our offerings are tailored to meet your unique business needs. Dive in to see how we can help transform your ideas into reality.
             </p>
           </Col>
           <Col md={5} className="text-center">
@@ -230,7 +230,7 @@ Phone: ${payload.phone || 'Not provided'}
                   <input type="radio" name="cms" value="basic" onChange={(e) => setCms(e.target.value)} className="form-check-input" />
                 </div>
                 <div className="d-flex justify-content-between align-items-center mb-2">
-                  <span className="text-white">Custom Admin Dashboard ($500-$1000)</span>
+                  <span className="text-white">Custom Admin Dashboard </span>
                   <input type="radio" name="cms" value="custom" onChange={(e) => setCms(e.target.value)} className="form-check-input" />
                 </div>
               </div>
