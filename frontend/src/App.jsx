@@ -15,11 +15,11 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 function App() {
   const [load, upadateLoad] = useState(true);
-  const { i18n } = useTranslation();
+  // const { i18n } = useTranslation();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -38,7 +38,6 @@ function App() {
     if (isRTL) {
       const link = document.createElement('link');
       link.rel = 'stylesheet';
-      link.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css';
       document.head.appendChild(link);
     } else {
       // Remove RTL CSS if switching back
