@@ -84,13 +84,13 @@ function NavBar() {
                 {t('navbar.services')}
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Button variant="primary" size="sm" onClick={() => changeLanguage('en')} className="me-2">EN</Button>
-              <Button variant="primary" size="sm" onClick={() => changeLanguage('fr')}>FR</Button>
-              <Button variant="primary" size="sm" onClick={() => changeLanguage('ar')} className="me-2">AR</Button>
-            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
+        <div className="d-flex ms-2">
+          <Button variant="primary" size="sm" onClick={() => changeLanguage('en')} className="me-2">EN</Button>
+          <Button variant="primary" size="sm" onClick={() => changeLanguage('fr')} className="me-1">FR</Button>
+          <Button variant="primary" size="sm" onClick={() => changeLanguage('ar')}>AR</Button>
+        </div>
       </Container>
     </Navbar>
   );
