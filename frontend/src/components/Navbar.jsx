@@ -90,7 +90,7 @@ function NavBar() {
         </Navbar.Collapse>
         <Dropdown className="ms-2">
           <Dropdown.Toggle variant="primary" id="language-dropdown">
-            <FaGlobe /> {i18n.language.toUpperCase()}
+            <FaGlobe /> {i18n.language ? i18n.language.toUpperCase() : 'EN'}
           </Dropdown.Toggle>
           <Dropdown.Menu>
             <Dropdown.Item onClick={() => changeLanguage('en')}>English</Dropdown.Item>
