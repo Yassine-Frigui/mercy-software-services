@@ -32,6 +32,8 @@ function NavBar() {
     i18n.changeLanguage(lng);
   };
 
+  const currentLanguage = i18n.language;
+
   return (
     <Navbar
       expanded={expand}
@@ -68,7 +70,7 @@ function NavBar() {
                 to="/objectives"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.objectives')} DIE DIE DIE
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.objectives')}
               </Nav.Link>
             </Nav.Item>
 
@@ -87,9 +89,29 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
         <div className="d-flex ms-2">
-          <Button variant="primary" size="sm" className="me-2">EN</Button>
-          <Button variant="primary" size="sm" className="me-2">FR</Button>
-          <Button variant="primary" size="sm">AR</Button>
+          <Button 
+            variant={currentLanguage === 'en' ? 'light' : 'outline-light'} 
+            size="sm" 
+            className="me-2" 
+            onClick={() => changeLanguage('en')}
+          >
+            EN
+          </Button>
+          <Button 
+            variant={currentLanguage === 'fr' ? 'light' : 'outline-light'} 
+            size="sm" 
+            className="me-2" 
+            onClick={() => changeLanguage('fr')}
+          >
+            FR
+          </Button>
+          <Button 
+            variant={currentLanguage === 'ar' ? 'light' : 'outline-light'} 
+            size="sm" 
+            onClick={() => changeLanguage('ar')}
+          >
+            AR
+          </Button>
         </div>
       </Container>
     </Navbar>

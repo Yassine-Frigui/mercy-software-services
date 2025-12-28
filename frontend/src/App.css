@@ -38,7 +38,7 @@
 }
 
 /* RTL Support */
-/* .rtl {
+.rtl {
   direction: rtl;
 }
 
@@ -60,4 +60,4 @@
 
 .rtl .text-justify {
   text-align: justify;
-} */
+}
