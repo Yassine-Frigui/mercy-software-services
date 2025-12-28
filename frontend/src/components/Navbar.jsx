@@ -3,9 +3,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "/logo_.png";
-import Button from "react-bootstrap/Button";
+import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+// import globe icon 
+import { FaGlobe } from "react-icons/fa";
+
 import {
   AiFillStar,
   AiOutlineHome,
@@ -44,7 +47,7 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid " alt="brand" style={{ height: "45px", width: "45px", marginRight: "30px"  }} />
-          <span className="navbar-brand-text purple fw-bold" style={{ paddingTop: "8px" }}   > {t('navbar.brand')}</span>
+          <span className="navbar-brand-text  purple fw-bold" style={{ paddingTop: "8px" }}   > {t('navbar.brand')}</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -88,31 +91,31 @@ function NavBar() {
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
-        <div className="d-flex ms-2">
-          <Button 
-            variant={currentLanguage === 'en' ? 'light' : 'outline-light'} 
-            size="sm" 
-            className="me-2" 
-            onClick={() => changeLanguage('en')}
-          >
-            EN
-          </Button>
-          <Button 
-            variant={currentLanguage === 'fr' ? 'light' : 'outline-light'} 
-            size="sm" 
-            className="me-2" 
-            onClick={() => changeLanguage('fr')}
-          >
-            FR
-          </Button>
-          <Button 
-            variant={currentLanguage === 'ar' ? 'light' : 'outline-light'} 
-            size="sm" 
-            onClick={() => changeLanguage('ar')}
-          >
-            AR
-          </Button>
-        </div>
+        <Dropdown className="d-flex ms-2">
+          <Dropdown.Toggle variant="outline-light" size="sm" id="language-dropdown">
+            <FaGlobe style={{ marginRight: "5px" }} /> {currentLanguage.toUpperCase()}
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item 
+              active={currentLanguage === 'en'} 
+              onClick={() => changeLanguage('en')}
+            >
+              English
+            </Dropdown.Item>
+            <Dropdown.Item 
+              active={currentLanguage === 'fr'} 
+              onClick={() => changeLanguage('fr')}
+            >
+              Français
+            </Dropdown.Item>
+            <Dropdown.Item 
+              active={currentLanguage === 'ar'} 
+              onClick={() => changeLanguage('ar')}
+            >
+              العربية
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </Container>
     </Navbar>
   );

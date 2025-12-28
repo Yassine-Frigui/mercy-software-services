@@ -57,9 +57,16 @@
 .rtl .text-start {
   text-align: right !important;
 }
-
+.rtl .text-start-wheel {
+  text-align: right !important;
+}
 .rtl .text-justify {
   text-align: justify;
+}
+.rtl .navbar-brand-text {
+  /* Adjust margin for RTL in percentage (50% of the container) */
+  margin-left: 550px;
+  margin-right: 0px;
 }
 
 /* LTR Support */
