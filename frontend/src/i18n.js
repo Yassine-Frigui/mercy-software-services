@@ -13,9 +13,9 @@ const resources = {
   fr: {
     translation: fr
   },
-  ar: {
-    translation: ar
-  }
+  // ar: {
+  //   translation: ar
+  // }
 };
 
 
