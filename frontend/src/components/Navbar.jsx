@@ -68,7 +68,7 @@ function NavBar() {
                 to="/objectives"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.objectives')}
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.objectives')} DIE DIE DIE
               </Nav.Link>
             </Nav.Item>
 
