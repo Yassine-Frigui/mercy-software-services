@@ -19,7 +19,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
-  // const { i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -34,17 +34,18 @@ function App() {
     document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
     document.documentElement.lang = i18n.language;
 
-  //   // Add RTL CSS if needed
-  //   if (isRTL) {
-  //     const link = document.createElement('link');
-  //     link.rel = 'stylesheet';
-  //     document.head.appendChild(link);
-  //   } else {
-  //     // Remove RTL CSS if switching back
-  //     const rtlLink = document.querySelector('link[href*="bootstrap.rtl"]');
-  //     if (rtlLink) rtlLink.remove();
-  //   }
-  // }, [i18n.language]);
+    // Add RTL CSS if needed
+    // if (isRTL) {
+    //   const link = document.createElement('link');
+    //   link.rel = 'stylesheet';
+    //   link.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css';
+    //   document.head.appendChild(link);
+    // } else {
+    //   // Remove RTL CSS if switching back
+    //   const rtlLink = document.querySelector('link[href*="bootstrap.rtl"]');
+    //   if (rtlLink) rtlLink.remove();
+    // }
+  }, [i18n.language]);
 
   return (
     <Router>
