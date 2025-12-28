@@ -38,6 +38,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
+        <h1 style={{color: 'red', position: 'absolute', top: '10px', left: '10px', zIndex: 9999}}>NAVBAR IS HERE</h1>
         <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid " alt="brand" style={{ height: "45px", width: "45px", marginRight: "30px"  }} />
           <span className="navbar-brand-text purple fw-bold" style={{ paddingTop: "8px" }}   >Mercy Software Services</span>
