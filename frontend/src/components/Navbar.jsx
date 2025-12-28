@@ -85,9 +85,9 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Button variant="outline-light" size="sm" onClick={() => changeLanguage('en')} className="me-2">EN</Button>
-              <Button variant="outline-light" size="sm" onClick={() => changeLanguage('fr')}>FR</Button>
-              <Button variant="outline-light" size="sm" onClick={() => changeLanguage('ar')} className="me-2">AR</Button>
+              <Button variant="primary" size="sm" onClick={() => changeLanguage('en')} className="me-2">EN</Button>
+              <Button variant="primary" size="sm" onClick={() => changeLanguage('fr')}>FR</Button>
+              <Button variant="primary" size="sm" onClick={() => changeLanguage('ar')} className="me-2">AR</Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
