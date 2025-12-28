@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Lottie from "lottie-react";
 import Tilt from "react-parallax-tilt";
-import build from "../../Assets/lotties/build_2.json";
+import build from "../../Assets/lotties/build.json";
 import { useTranslation } from "react-i18next";
 
 function Home2() {
