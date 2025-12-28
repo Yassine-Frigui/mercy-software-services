@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "/logo_.png";
 import Button from "react-bootstrap/Button";
-import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
@@ -13,7 +12,6 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import { FaGlobe } from "react-icons/fa";
 
 function NavBar() {
   const { t, i18n } = useTranslation();
@@ -88,16 +86,11 @@ function NavBar() {
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
-        <Dropdown className="ms-2">
-          <Dropdown.Toggle variant="primary" id="language-dropdown">
-            <FaGlobe /> {i18n.language ? i18n.language.toUpperCase() : 'EN'}
-          </Dropdown.Toggle>
-          <Dropdown.Menu>
-            <Dropdown.Item onClick={() => changeLanguage('en')}>English</Dropdown.Item>
-            <Dropdown.Item onClick={() => changeLanguage('fr')}>Français</Dropdown.Item>
-            <Dropdown.Item onClick={() => changeLanguage('ar')}>العربية</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+        <div className="d-flex ms-2">
+          <Button variant="primary" size="sm" className="me-2">EN</Button>
+          <Button variant="primary" size="sm" className="me-2">FR</Button>
+          <Button variant="primary" size="sm">AR</Button>
+        </div>
       </Container>
     </Navbar>
   );
