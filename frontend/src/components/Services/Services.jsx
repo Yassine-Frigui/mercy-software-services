@@ -5,8 +5,10 @@ import { Container, Form, Row, Col, Button } from 'react-bootstrap';
 import Particle from '../Particle';
 import Lottie from 'lottie-react';
 import codeAnimation from '../../Assets/lotties/code.json';
+import { useTranslation } from 'react-i18next';
 
 const Services = () => {
+  const { t } = useTranslation();
   const [websiteType, setWebsiteType] = useState('basic');
   const [designLevel, setDesignLevel] = useState('standard');
   const [cms, setCms] = useState('');
@@ -146,10 +148,10 @@ Phone: ${payload.phone || 'Not provided'}
         <Row className="align-items-center">
           <Col md={7}>
             <h1 style={{ fontSize: "3rem", paddingBottom: "20px", color: "white" }}>
-              Discover Our <strong className="purple">Services</strong>
+              {t('services.discoverServices').split(' ').slice(0, 2).join(' ')} <strong className="purple">{t('services.discoverServices').split(' ')[2]}</strong>
             </h1>
-            <p style={{ color: "white", fontSize: "1.2rem", textAlign: "justify" }}>
-              Explore a collection of services designed to elevate your digital presence. From  web development to comprehensive CMS solutions, our offerings are tailored to meet your unique business needs. Dive in to see how we can help transform your ideas into reality.
+            <p className="text-white text-start" style={{ fontSize: "1.2rem" }}>
+              {t('services.servicesText')}
             </p>
           </Col>
           <Col md={5} className="text-center">
@@ -163,7 +165,7 @@ Phone: ${payload.phone || 'Not provided'}
         <div className="blur-bg"></div>
         <div className="d-flex align-items-center justify-content-center position-relative">
           <span className="services-title">
-            Our Services
+            {t('services.ourServices')}
           </span>
             {/* <span className="projects-line"></span> */}
         </div>
@@ -186,51 +188,49 @@ Phone: ${payload.phone || 'Not provided'}
 
         {/* Section Before Form */}
         <div className="mt-5 text-center">
-          <h1 className="service-heading">
-            Let's <strong className="purple">Connect</strong>
+          <h1 className="service-heading" dangerouslySetInnerHTML={{ __html: t('services.letsConnect') }}>
           </h1>
           <p className="text-white">
-            Have a project in mind or want to discuss opportunities? Fill out the form below to get in touch.
+            {t('services.connectText')}
           </p>
         </div>
 
         {/* Form Component */}
         <div className="mt-5 d-flex justify-content-center">
           <Form className="text-white" style={{ maxWidth: '50rem', width: '100%' }}>
-            {/* Website Type */}
-            <Form.Group className="mb-3" style ={{paddingBottom: '50px'}}>
-              <Form.Label className="purple">Website Type</Form.Label>
+            <Form.Group className="mb-3" style ={{paddingBottom: '25px'}}>
+              <Form.Label className="purple">{t('services.websiteType')}</Form.Label>
               <Form.Select value={websiteType} onChange={(e) => setWebsiteType(e.target.value)} style={{ backgroundColor: 'black', border: 'none', color: 'white' }}>
-                <option value="basic">Basic</option>
-                <option value="corporate">Corporate</option>
-                <option value="ecommerce">E-commerce</option>
+                <option value="basic">{t('services.basic')}</option>
+                <option value="corporate">{t('services.corporate')}</option>
+                <option value="ecommerce">{t('services.ecommerce')}</option>
               </Form.Select>
             </Form.Group>
 
             {/* Design Level */}
-            <Form.Group className="mb-3" style ={{paddingBottom: '50px'}}>
-              <Form.Label className="purple ">Design Level</Form.Label>
+            <Form.Group className="mb-3" style ={{paddingBottom: '25px'}}>
+              <Form.Label className="purple ">{t('services.designLevel')}</Form.Label>
               <Form.Select value={designLevel} onChange={(e) => setDesignLevel(e.target.value)} style={{ backgroundColor: 'black', border: 'none', color: 'white' }}>
-                <option value="standard">Standard</option>
-                <option value="custom">Custom</option>
-                <option value="premium">Premium</option>
+                <option value="standard">{t('services.standard')}</option>
+                <option value="custom">{t('services.custom')}</option>
+                <option value="premium">{t('services.premium')}</option>
               </Form.Select>
             </Form.Group>
 
             {/* CMS / Dashboard */}
-            <Form.Group className="mb-3" style ={{paddingBottom: '50px'}}>
-              <Form.Label className="purple">CMS / Dashboard</Form.Label>
+            <Form.Group className="mb-3" style ={{paddingBottom: '25px'}}>
+              <Form.Label className="purple">{t('services.cmsDashboard')}</Form.Label>
               <div>
                 <div className="d-flex justify-content-between align-items-center mb-2">
-                  <span className="text-white">None</span>
+                  <span className="text-white">{t('services.none')}</span>
                   <input type="radio" name="cms" value="none" onChange={(e) => setCms(e.target.value)} className="form-check-input" />
                 </div>
                 <div className="d-flex justify-content-between align-items-center mb-2">
-                  <span className="text-white">Basic CMS</span>
+                  <span className="text-white">{t('services.basicCms')}</span>
                   <input type="radio" name="cms" value="basic" onChange={(e) => setCms(e.target.value)} className="form-check-input" />
                 </div>
                 <div className="d-flex justify-content-between align-items-center mb-2">
-                  <span className="text-white">Custom Admin Dashboard </span>
+                  <span className="text-white">{t('services.customAdminDashboard')}</span>
                   <input type="radio" name="cms" value="custom" onChange={(e) => setCms(e.target.value)} className="form-check-input" />
                 </div>
               </div>
@@ -238,22 +238,22 @@ Phone: ${payload.phone || 'Not provided'}
 
             {/* Extra Features */}
             <Form.Group className="mb-3" style ={{paddingBottom: '50px'}}>
-              <Form.Label className="purple">Extra Features</Form.Label>
+              <Form.Label className="purple">{t('services.extraFeatures')}</Form.Label>
               <div>
                 <div className="d-flex justify-content-between align-items-center mb-2">
-                  <span className="text-white">SEO</span>
+                  <span className="text-white">{t('services.seo')}</span>
                   <input type="checkbox" onChange={(e) => handleExtraFeatureChange('seo', e.target.checked)} className="form-check-input" />
                 </div>
                 <div className="d-flex justify-content-between align-items-center mb-2">
-                  <span className="text-white">Maintenance</span>
+                  <span className="text-white">{t('services.maintenance')}</span>
                   <input type="checkbox" onChange={(e) => handleExtraFeatureChange('maintenance', e.target.checked)} className="form-check-input" />
                 </div>
                 <div className="d-flex justify-content-between align-items-center mb-2">
-                  <span className="text-white">Payment Integration</span>
+                  <span className="text-white">{t('services.paymentIntegration')}</span>
                   <input type="checkbox" onChange={(e) => handleExtraFeatureChange('payment', e.target.checked)} className="form-check-input" />
                 </div>
                 <div className="d-flex justify-content-between align-items-center mb-2">
-                  <span className="text-white">Multi-language support</span>
+                  <span className="text-white">{t('services.multilang')}</span>
                   <input type="checkbox" onChange={(e) => handleExtraFeatureChange('multilang', e.target.checked)} className="form-check-input" />
                 </div>
               </div>
@@ -261,24 +261,24 @@ Phone: ${payload.phone || 'Not provided'}
 
             {/* Email */}
             <Form.Group className="mb-3">
-              <Form.Label className="purple">Email</Form.Label>
+              <Form.Label className="purple">{t('services.email')}</Form.Label>
               <Form.Control
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
+                placeholder={t('services.email')}
                 style={{ backgroundColor: 'rgba(255,255,255,0.1)', border: 'none', color: 'white' }}
               />
             </Form.Group>
 
             {/* Phone */}
             <Form.Group className="mb-3">
-              <Form.Label className="purple">Phone Number</Form.Label>
+              <Form.Label className="purple">{t('services.phoneNumber')}</Form.Label>
               <Form.Control
                 type="tel"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                placeholder="Enter your phone number"
+                placeholder={t('services.phoneNumber')}
                 style={{ backgroundColor: 'rgba(255,255,255,0.1)', border: 'none', color: 'white' }}
               />
             </Form.Group>
@@ -289,13 +289,13 @@ Phone: ${payload.phone || 'Not provided'}
 
         {/* Total Price and Button */}
         <div className="mt-3 text-center">
-          <Button variant="primary" onClick={handleRequestQuote} className="mt-3">Request Quote</Button>
+          <Button variant="primary" onClick={handleRequestQuote} className="mt-3">{t('services.requestQuote')}</Button>
         </div>
       </div>
     </div>
     </Container> 
     );
-  
+
 };
 
 export default Services;

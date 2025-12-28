@@ -1,0 +1,127 @@
+{
+  "navbar": {
+    "brand": "Mercy Software Services",
+    "home": "Home",
+    "objectives": "Objectives",
+    "services": "Services"
+  },
+  "home": {
+    "yourVision": "Your vision",
+    "ourMission": "Our mission",
+    "inspiration": "Inspiration",
+    "innovation": "Innovation",
+    "vision": "Vision",
+    "excellence": "Excellence",
+    "findUsOn": "Find Us On"
+  },
+  "type": {
+    "company": "Mercy Software Services"
+  },
+  "home2": {
+    "ourMission": "Our <span class=\"purple\"> Mission </span> ",
+    "missionText": "Mercy Software Services delivers modern, reliable, and tailored web solutions for businesses seeking a strong and efficient online presence. We specialize in <span class=\"purple\">Web development</span>, <span class=\"purple\">CMS integration</span>, and <span class=\"purple\">custom admin dashboards</span>, with a focus on clarity, performance, and scalability. Every project is approached with a practical mindset, ensuring solutions that are easy to manage, aligned with business goals, and built to grow over time."
+  },
+  "objectives": {
+    "title": "Our Objectives",
+    "getInTouch": "Get In Touch",
+    "contactText": "Ready to collaborate or have questions? Reach out to us!",
+    "email": "Email:",
+    "phone": "Phone:",
+    "linkedin": "LinkedIn:",
+    "website": "Website:"
+  },
+  "services": {
+    "discoverServices": "Discover Our Services",
+    "servicesText": "Explore a collection of services designed to elevate your digital presence. From web development to comprehensive CMS solutions, our offerings are tailored to meet your unique business needs. Dive in to see how we can help transform your ideas into reality.",
+    "ourServices": "Our Services",
+    "letsConnect": "Let's <span class=\"purple\">Connect",
+    "connectText": "Have a project in mind or want to discuss opportunities? Fill out the form below to get in touch.",
+    "websiteType": "Website Type",
+    "basic": "Basic",
+    "corporate": "Corporate",
+    "ecommerce": "E-commerce",
+    "designLevel": "Design Level",
+    "standard": "Standard",
+    "custom": "Custom",
+    "premium": "Premium",
+    "cmsDashboard": "CMS / Dashboard",
+    "none": "None",
+    "basicCms": "Basic CMS",
+    "customAdminDashboard": "Custom Admin Dashboard",
+    "extraFeatures": "Extra Features",
+    "seo": "SEO",
+    "maintenance": "Maintenance",
+    "paymentIntegration": "Payment Integration",
+    "multilang": "Multi-language support",
+    "email": "Email",
+    "phoneNumber": "Phone Number",
+    "requestQuote": "Request Quote"
+  },
+  "projects": {
+    "discoverProjects": "Discover My Projects",
+    "projectsText": "Explore a collection of innovative projects showcasing my skills in web development, mobile apps, and more. Each project reflects my passion for creating impactful solutions.",
+    "myProjects": "My Projects"
+  },
+  "footer": {
+    "designedBy": "Designed and Developed by Mercy Software Services",
+    "copyright": "Copyright © {{year}} MSS"
+  },
+  "objectivesData": {
+    "main": {
+      "title": "Core Objective",
+      "description": "Driving innovation and excellence in all our endeavors."
+    },
+    "customer": {
+      "title": "Customer Focus",
+      "description": "Prioritizing our clients' needs and delivering exceptional experiences."
+    },
+    "sustainability": {
+      "title": "Sustainability",
+      "description": "Committing to eco-friendly practices and long-term environmental responsibility."
+    },
+    "growth": {
+      "title": "Growth",
+      "description": "Expanding our reach and capabilities to serve more businesses worldwide."
+    },
+    "innovation": {
+      "title": "Innovation",
+      "description": "Continuously pushing the boundaries of technology to create cutting-edge solutions."
+    }
+  },
+  "servicesData": [
+    {
+      "name": "Web Development",
+      "description": "Designing and developing fast, secure, and scalable websites tailored to your business needs."
+    },
+    {
+      "name": "Custom Admin Dashboards",
+      "description": "Creating customized admin dashboards to manage users, content, orders, or internal processes securely."
+    },
+    {
+      "name": "CMS Integration",
+      "description": "Setting up a simple and effective CMS that allows you to modify content, images, and pages without technical skills."
+    },
+    {
+      "name": "Website Maintenance and Optimization",
+      "description": "Ensuring updates, performance optimization, and stability of your site for reliable and durable operation."
+    }
+  ],
+  "projectsData": [
+    {
+      "name": "Web Development",
+      "description": "Designing and developing fast, secure, and scalable websites tailored to your business needs."
+    },
+    {
+      "name": "Custom Admin Dashboards",
+      "description": "Creating customized admin dashboards to manage users, content, orders, or internal processes securely."
+    },
+    {
+      "name": "CMS Integration",
+      "description": "Setting up a simple and effective CMS that allows you to modify content, images, and pages without technical skills."
+    },
+    {
+      "name": "Website Maintenance and Optimization",
+      "description": "Ensuring updates, performance optimization, and stability of your site for reliable and durable operation."
+    }
+  ]
+}

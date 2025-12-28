@@ -5,6 +5,10 @@ import { Container, Form, Row, Col, Button } from 'react-bootstrap';
 import Particle from '../Particle';
 import Lottie from 'lottie-react';
 import codeAnimation from '../../Assets/lotties/code.json';
+import { useTranslation } from 'react-i18next';
+
+const Projects = () => {
+  const { t } = useTranslation();
 
 const Projects = () => {
   const [websiteType, setWebsiteType] = useState('basic');
@@ -146,10 +150,10 @@ Phone: ${payload.phone || 'Not provided'}
         <Row className="align-items-center">
           <Col md={7}>
             <h1 style={{ fontSize: "3rem", paddingBottom: "20px", color: "white" }}>
-              Discover My <strong className="purple">Projects</strong>
+              {t('projects.discoverProjects')} <strong className="purple">{t('projects.discoverProjects').split(' ')[2]}</strong>
             </h1>
-            <p style={{ color: "white", fontSize: "1.2rem", textAlign: "justify" }}>
-              Explore a collection of innovative projects showcasing my skills in web development, mobile apps, and more. Each project reflects my passion for creating impactful solutions.
+            <p className="text-white text-start" style={{ fontSize: "1.2rem" }}>
+              {t('projects.projectsText')}
             </p>
           </Col>
           <Col md={5} className="text-center">
@@ -163,7 +167,7 @@ Phone: ${payload.phone || 'Not provided'}
         <div className="blur-bg"></div>
         <div className="d-flex align-items-center justify-content-center position-relative">
           <span className="projects-title">
-            Our Services 
+            {t('projects.myProjects')}
           </span>
             {/* <span className="projects-line"></span> */}
         </div>

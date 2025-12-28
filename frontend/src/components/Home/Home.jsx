@@ -5,6 +5,7 @@ import Lottie from "lottie-react";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { useTranslation } from "react-i18next";
 
 import {
   AiFillGithub,
@@ -14,20 +15,21 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
+  const { t } = useTranslation();
   return (
     <section>
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header">
-            <div style={{ padding: 50, textAlign: "left" }}>
+            <Col md={7} className="home-header text-start" style={{ padding: 30 , marginTop: 50 }} >
+            <div className="text-start" style={{ marginBottom: 50,}}>
                 <Type />
               </div>
            
               <h1 className="heading-name">
-                Your vision , 
-                <strong className="main-name"> Our mission</strong>
+                {t('home.yourVision')} , 
+                <strong className="main-name"> {t('home.ourMission')}</strong>
               </h1>
 
 
@@ -37,11 +39,11 @@ function Home() {
 
                 <div className="word-viewport">
                   <div className="word-wheel">
-                      <span >Inspiration</span>
-                      <span >Innovation</span>
-                      <span >Vision</span>
-                      <span >Excellence</span>
-                      <span >Inspiration</span>
+                      <span >{t('home.inspiration')}</span>
+                      <span >{t('home.innovation')}</span>
+                      <span >{t('home.vision')}</span>
+                      <span >{t('home.excellence')}</span>
+                      <span >{t('home.inspiration')}</span>
 
                   </div>
                 </div>
@@ -65,7 +67,7 @@ function Home() {
       <Container>
         <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
           <Col md={12} className="home-about-social">
-            <h1>Find Us On</h1>
+            <h1>{t('home.findUsOn')}</h1>
             {/* <p>
               Feel free to <span className="purple">connect </span>with me
             </p> */}

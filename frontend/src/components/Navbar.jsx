@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "/logo_.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -13,6 +14,7 @@ import {
 } from "react-icons/ai";
 
 function NavBar() {
+  const { t, i18n } = useTranslation();
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -26,6 +28,10 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <Navbar
       expanded={expand}
@@ -36,7 +42,7 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid " alt="brand" style={{ height: "45px", width: "45px", marginRight: "30px"  }} />
-          <span className="navbar-brand-text purple fw-bold" style={{ paddingTop: "8px" }}   > Mercy Software Services</span>
+          <span className="navbar-brand-text purple fw-bold" style={{ paddingTop: "8px" }}   > {t('navbar.brand')}</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -52,7 +58,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t('navbar.home')}
               </Nav.Link>
             </Nav.Item>
 
@@ -62,7 +68,7 @@ function NavBar() {
                 to="/objectives"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Objectives
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.objectives')}
               </Nav.Link>
             </Nav.Item>
 
@@ -75,8 +81,13 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Services
+                {t('navbar.services')}
               </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Button variant="outline-light" size="sm" onClick={() => changeLanguage('en')} className="me-2">EN</Button>
+              <Button variant="outline-light" size="sm" onClick={() => changeLanguage('fr')}>FR</Button>
+              <Button variant="outline-light" size="sm" onClick={() => changeLanguage('ar')} className="me-2">AR</Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

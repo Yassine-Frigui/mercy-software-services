@@ -1,0 +1,127 @@
+{
+  "navbar": {
+    "brand": "Mercy Software Services",
+    "home": "Accueil",
+    "objectives": "Objectifs",
+    "services": "Services"
+  },
+  "home": {
+    "yourVision": "Votre vision",
+    "ourMission": "Notre mission",
+    "inspiration": "Inspiration",
+    "innovation": "Innovation",
+    "vision": "Vision",
+    "excellence": "Excellence",
+    "findUsOn": "Retrouvez-nous sur"
+  },
+  "type": {
+    "company": "Mercy Software Services"
+  },
+  "home2": {
+    "ourMission": "Notre Mission",
+    "missionText": "Mercy Software Services fournit des solutions web modernes, fiables et sur mesure pour les entreprises cherchant une présence en ligne forte et efficace. Nous nous spécialisons dans le <span class=\"purple\">développement web</span>, <span class=\"purple\">l'intégration CMS</span> et les <span class=\"purple\">Dashboards personnalisés</span>, avec un focus sur la clarté, les performances et l'évolutivité. Chaque projet est abordé avec un état d'esprit pratique, assurant des solutions faciles à gérer, alignées sur les objectifs commerciaux et conçues pour évoluer avec le temps."
+  },
+  "objectives": {
+    "title": "Nos Objectifs",
+    "getInTouch": "Entrer en Contact",
+    "contactText": "Prêt à collaborer ou avez des questions ? Contactez-nous !",
+    "email": "Email :",
+    "phone": "Téléphone :",
+    "linkedin": "LinkedIn :",
+    "website": "Site Web :"
+  },
+  "services": {
+    "discoverServices": "Découvrez Nos Services",
+    "servicesText": "Explorez une collection de services conçus pour élever votre présence numérique. Du développement web aux solutions CMS complètes, nos offres sont adaptées à vos besoins commerciaux uniques. Plongez pour voir comment nous pouvons vous aider à transformer vos idées en réalité.",
+    "ourServices": "Nos Services",
+    "letsConnect": "Connectons-<span class=\"purple\">nous</span>",
+    "connectText": "Vous avez un projet en tête ou souhaitez discuter d'opportunités ? Remplissez le formulaire ci-dessous pour nous contacter.",
+    "websiteType": "Type de Site Web",
+    "basic": "Basique",
+    "corporate": "Entreprise",
+    "ecommerce": "E-commerce",
+    "designLevel": "Niveau de Design",
+    "standard": "Standard",
+    "custom": "Personnalisé",
+    "premium": "Premium",
+    "cmsDashboard": "CMS / Tableau de Bord",
+    "none": "Aucun",
+    "basicCms": "CMS Basique",
+    "customAdminDashboard": "Tableau de Bord Admin Personnalisé",
+    "extraFeatures": "Fonctionnalités Supplémentaires",
+    "seo": "SEO",
+    "maintenance": "Maintenance",
+    "paymentIntegration": "Intégration de Paiement",
+    "multilang": "Support multi-langues",
+    "email": "Email",
+    "phoneNumber": "Numéro de Téléphone",
+    "requestQuote": "Demander un Devis"
+  },
+  "projects": {
+    "discoverProjects": "Découvrez Mes Projets",
+    "projectsText": "Explorez une collection de projets innovants mettant en valeur mes compétences en développement web, applications mobiles, et plus. Chaque projet reflète ma passion pour créer des solutions impactantes.",
+    "myProjects": "Mes Projets"
+  },
+  "footer": {
+    "designedBy": "Conçu et Développé par Mercy Software Services",
+    "copyright": "Copyright © {{year}} MSS"
+  },
+  "objectivesData": {
+    "main": {
+      "title": "Objectif Principal",
+      "description": "Piloter l'innovation et l'excellence dans toutes nos entreprises."
+    },
+    "customer": {
+      "title": "Focus Client",
+      "description": "Prioriser les besoins de nos clients et livrer des expériences exceptionnelles."
+    },
+    "sustainability": {
+      "title": "Durabilité",
+      "description": "S'engager dans des pratiques écologiques et une responsabilité environnementale à long terme."
+    },
+    "growth": {
+      "title": "Croissance",
+      "description": "Étendre notre portée et nos capacités pour servir plus d'entreprises dans le monde."
+    },
+    "innovation": {
+      "title": "Innovation",
+      "description": "Pousser continuellement les limites de la technologie pour créer des solutions de pointe."
+    }
+  },
+  "servicesData": [
+    {
+      "name": "Développement de sites web",
+      "description": "Conception et développement de sites web rapides, sécurisés et évolutifs, adaptés aux besoins de votre entreprise."
+    },
+    {
+      "name": "Tableaux de bord administratifs sur mesure",
+      "description": "Création de dashboards administratifs personnalisés pour gérer utilisateurs, contenus, commandes ou processus internes en toute sécurité."
+    },
+    {
+      "name": "Intégration de CMS",
+      "description": "Mise en place d'un CMS simple et efficace vous permettant de modifier vos contenus, images et pages sans compétences techniques."
+    },
+    {
+      "name": "Maintenance et optimisation de sites web",
+      "description": "Assurer les mises à jour, l'optimisation des performances et la stabilité de votre site pour un fonctionnement fiable et durable."
+    }
+  ],
+  "projectsData": [
+    {
+      "name": "Développement de sites web",
+      "description": "Conception et développement de sites web rapides, sécurisés et évolutifs, adaptés aux besoins de votre entreprise."
+    },
+    {
+      "name": "Tableaux de bord administratifs sur mesure",
+      "description": "Création de dashboards administratifs personnalisés pour gérer utilisateurs, contenus, commandes ou processus internes en toute sécurité."
+    },
+    {
+      "name": "Intégration de CMS",
+      "description": "Mise en place d'un CMS simple et efficace vous permettant de modifier vos contenus, images et pages sans compétences techniques."
+    },
+    {
+      "name": "Maintenance et optimisation de sites web",
+      "description": "Assurer les mises à jour, l'optimisation des performances et la stabilité de votre site pour un fonctionnement fiable et durable."
+    }
+  ]
+}

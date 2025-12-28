@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+/* RTL Support */
+.rtl {
+  direction: rtl;
+}
+
+.rtl .row {
+  flex-direction: row-reverse;
+}
+
+.rtl .text-left {
+  text-align: right !important;
+}
+
+.rtl .text-right {
+  text-align: left !important;
+}
+
+.rtl .text-start {
+  text-align: right !important;
+}
+
+.rtl .text-justify {
+  text-align: justify;
+}

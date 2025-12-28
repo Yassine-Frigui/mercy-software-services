@@ -1,23 +1,23 @@
 export const servicesData = [
     {
         id: 1,
-        name: 'Développement de sites web.',
-        description: 'Conception et développement de sites web rapides, sécurisés et évolutifs, adaptés aux besoins de votre entreprise.',
+        name: 'Web Development',
+        description: 'Designing and developing fast, secure, and scalable websites tailored to your business needs.',
     },
     {
         id: 2,
-        name: 'Tableaux de bord administratifs sur mesure',
-        description: 'Création de dashboards administratifs personnalisés pour gérer utilisateurs, contenus, commandes ou processus internes en toute sécurité.',
+        name: 'Custom Admin Dashboards',
+        description: 'Creating customized admin dashboards to manage users, content, orders, or internal processes securely.',
     },
     {
         id: 3,
-        name: 'Intégration de CMS',
-        description: 'Mise en place d’un CMS simple et efficace vous permettant de modifier vos contenus, images et pages sans compétences techniques.',
+        name: 'CMS Integration',
+        description: 'Setting up a simple and effective CMS that allows you to modify content, images, and pages without technical skills.',
     },
     {
         id: 4,
-        name: 'Maintenance et optimisation de sites web',
-        description: 'Assurer les mises à jour, l’optimisation des performances et la stabilité de votre site pour un fonctionnement fiable et durable.',
+        name: 'Website Maintenance and Optimization',
+        description: 'Ensuring updates, performance optimization, and stability of your site for reliable and durable operation.',
     }
 ];
 
