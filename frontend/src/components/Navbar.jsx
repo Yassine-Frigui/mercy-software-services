@@ -68,7 +68,7 @@ function NavBar() {
                 to="/objectives"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.objectives')}
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.objectives')} DIE DIE DIE
               </Nav.Link>
             </Nav.Item>
 
@@ -87,8 +87,9 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
         <div className="d-flex ms-2">
-          <Button variant="primary" size="sm" className="me-2" onClick={() => changeLanguage('en')}>EN</Button>
-          <Button variant="primary" size="sm" onClick={() => changeLanguage('fr')}>FR</Button>
+          <Button variant="primary" size="sm" className="me-2">EN</Button>
+          <Button variant="primary" size="sm" className="me-2">FR</Button>
+          <Button variant="primary" size="sm">AR</Button>
         </div>
       </Container>
     </Navbar>

@@ -15,8 +15,7 @@
     "findUsOn": "Retrouvez-nous sur"
   },
   "type": {
-    "company": "Mercy Software Services",
-    "strings": ["Développeur Full Stack", "Designer UI/UX", "Ingénieur Logiciel"]
+    "company": "Mercy Software Services"
   },
   "home2": {
     "ourMission": "Notre Mission",

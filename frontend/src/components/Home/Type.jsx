@@ -1,17 +1,20 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 function Type() {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   return (
     <Typewriter
       options={{
-        strings: t('type.strings', { returnObjects: true }),
+        strings: [
+          
+          "KYS KYS KYS"
+        ],
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
-        pauseFor: 1000,
+        pauseFor: 150000,
       }}
     />
     
