@@ -39,7 +39,8 @@ function App() {
       const link = document.createElement('link');
       link.rel = 'stylesheet';
       link.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css';
-      link.integrity = 'sha384-...'; // Add integrity if needed
+      link.integrity = 'sha384-PVn7CMJlKC6gDsv3ZbrcW9Z1qx5K1oQ2g2+YG6nLd9bm4ZGJ3ZfGxjvI6KjIYm5M';
+      link.crossOrigin = 'anonymous';
       document.head.appendChild(link);
     } else {
       // Remove RTL CSS if switching back
