@@ -152,7 +152,7 @@ Phone: ${payload.phone || 'Not provided'}
             <h1 style={{ fontSize: "3rem", paddingBottom: "20px", color: "white" }}>
               {t('projects.discoverProjects')} <strong className="purple">{t('projects.discoverProjects').split(' ')[2]}</strong>
             </h1>
-            <p className="text-white text-start" style={{ fontSize: "1.2rem" }}>
+            <p style={{ color: "white", fontSize: "1.2rem", textAlign: "justify" }}>
               {t('projects.projectsText')}
             </p>
           </Col>

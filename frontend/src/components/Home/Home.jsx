@@ -22,8 +22,8 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header text-start" style={{ padding: 30 , marginTop: 50 }} >
-            <div className="text-start" style={{ marginBottom: 50,}}>
+            <Col md={7} className="home-header">
+            <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
            

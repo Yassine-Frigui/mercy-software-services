@@ -148,9 +148,9 @@ Phone: ${payload.phone || 'Not provided'}
         <Row className="align-items-center">
           <Col md={7}>
             <h1 style={{ fontSize: "3rem", paddingBottom: "20px", color: "white" }}>
-              {t('services.discoverServices').split(' ').slice(0, 2).join(' ')} <strong className="purple">{t('services.discoverServices').split(' ')[2]}</strong>
+              {t('services.discoverServices')} <strong className="purple">{t('services.discoverServices').split(' ')[2]}</strong>
             </h1>
-            <p className="text-white text-start" style={{ fontSize: "1.2rem" }}>
+            <p style={{ color: "white", fontSize: "1.2rem", textAlign: "justify" }}>
               {t('services.servicesText')}
             </p>
           </Col>
@@ -188,7 +188,8 @@ Phone: ${payload.phone || 'Not provided'}
 
         {/* Section Before Form */}
         <div className="mt-5 text-center">
-          <h1 className="service-heading" dangerouslySetInnerHTML={{ __html: t('services.letsConnect') }}>
+          <h1 className="service-heading">
+            {t('services.letsConnect')} <strong className="purple">{t('services.letsConnect').split(' ')[1]}</strong>
           </h1>
           <p className="text-white">
             {t('services.connectText')}
@@ -198,7 +199,7 @@ Phone: ${payload.phone || 'Not provided'}
         {/* Form Component */}
         <div className="mt-5 d-flex justify-content-center">
           <Form className="text-white" style={{ maxWidth: '50rem', width: '100%' }}>
-            <Form.Group className="mb-3" style ={{paddingBottom: '25px'}}>
+            <Form.Group className="mb-3" style ={{paddingBottom: '50px'}}>
               <Form.Label className="purple">{t('services.websiteType')}</Form.Label>
               <Form.Select value={websiteType} onChange={(e) => setWebsiteType(e.target.value)} style={{ backgroundColor: 'black', border: 'none', color: 'white' }}>
                 <option value="basic">{t('services.basic')}</option>
@@ -208,7 +209,7 @@ Phone: ${payload.phone || 'Not provided'}
             </Form.Group>
 
             {/* Design Level */}
-            <Form.Group className="mb-3" style ={{paddingBottom: '25px'}}>
+            <Form.Group className="mb-3" style ={{paddingBottom: '50px'}}>
               <Form.Label className="purple ">{t('services.designLevel')}</Form.Label>
               <Form.Select value={designLevel} onChange={(e) => setDesignLevel(e.target.value)} style={{ backgroundColor: 'black', border: 'none', color: 'white' }}>
                 <option value="standard">{t('services.standard')}</option>
@@ -218,7 +219,7 @@ Phone: ${payload.phone || 'Not provided'}
             </Form.Group>
 
             {/* CMS / Dashboard */}
-            <Form.Group className="mb-3" style ={{paddingBottom: '25px'}}>
+            <Form.Group className="mb-3" style ={{paddingBottom: '50px'}}>
               <Form.Label className="purple">{t('services.cmsDashboard')}</Form.Label>
               <div>
                 <div className="d-flex justify-content-between align-items-center mb-2">

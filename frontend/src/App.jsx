@@ -15,11 +15,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import { useTranslation } from "react-i18next";
 
 function App() {
   const [load, upadateLoad] = useState(true);
-  const { i18n } = useTranslation();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -29,28 +27,10 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    const isRTL = i18n.language === 'ar';
-    document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
-    document.documentElement.lang = i18n.language;
-
-    // Add RTL CSS if needed
-    // if (isRTL) {
-    //   const link = document.createElement('link');
-    //   link.rel = 'stylesheet';
-    //   link.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css';
-    //   document.head.appendChild(link);
-    // } else {
-    //   // Remove RTL CSS if switching back
-    //   const rtlLink = document.querySelector('link[href*="bootstrap.rtl"]');
-    //   if (rtlLink) rtlLink.remove();
-    // }
-  }, [i18n.language]);
-
   return (
     <Router>
       <Preloader load={load} />
-      <div className={`App ${i18n.language === 'ar' ? 'rtl' : ''}`} id={load ? "no-scroll" : "scroll"}>
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
         <Routes>

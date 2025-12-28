@@ -79,8 +79,8 @@ function Objectives() {
             {t('objectives.getInTouch').split(' ').slice(0, 2).join(' ')} <strong className="purple">{t('objectives.getInTouch').split(' ')[2]}</strong>
           </h1>
           <Row style={{ justifyContent: "center", padding: "20px" }}>
-            <Col md={6} className="text-white text-start">
-              <p className="text-start" style={{ fontSize: "1.1em" }}>
+            <Col md={6} style={{ color: "white", textAlign: "left" }}>
+              <p style={{ fontSize: "1.1em" }}>
                 {t('objectives.contactText')}
               </p>
               <ul style={{ listStyle: "none", padding: 0 }}>
