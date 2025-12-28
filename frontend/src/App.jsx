@@ -34,17 +34,17 @@ function App() {
     document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
     document.documentElement.lang = i18n.language;
 
-    // Add RTL CSS if needed
-    if (isRTL) {
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      document.head.appendChild(link);
-    } else {
-      // Remove RTL CSS if switching back
-      const rtlLink = document.querySelector('link[href*="bootstrap.rtl"]');
-      if (rtlLink) rtlLink.remove();
-    }
-  }, [i18n.language]);
+  //   // Add RTL CSS if needed
+  //   if (isRTL) {
+  //     const link = document.createElement('link');
+  //     link.rel = 'stylesheet';
+  //     document.head.appendChild(link);
+  //   } else {
+  //     // Remove RTL CSS if switching back
+  //     const rtlLink = document.querySelector('link[href*="bootstrap.rtl"]');
+  //     if (rtlLink) rtlLink.remove();
+  //   }
+  // }, [i18n.language]);
 
   return (
     <Router>
