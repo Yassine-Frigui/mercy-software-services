@@ -1,7 +1,21 @@
 import React, { useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import logo from "/logo_.png";
+import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import {
+  AiFillStar,
+  AiOutlineHome,
+  AiOutlineFundProjectionScreen,
+  AiOutlineUser,
+} from "react-icons/ai";
 
 function NavBar() {
+  const { t, i18n } = useTranslation();
+  const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
   function scrollHandler() {
@@ -14,40 +28,71 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
-    <nav className={`navbar ${navColour ? "sticky" : "navbar"}`} style={{ position: 'fixed', top: 0, width: '100%', zIndex: 1000 }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.3rem 2rem' }}>
-        <h1 style={{color: 'red', position: 'absolute', top: '10px', left: '10px', zIndex: 9999}}>NAVBAR IS HERE</h1>
-        <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-          <img src="/logo_.png" alt="brand" style={{ height: "45px", width: "45px", marginRight: "30px" }} />
-          <span style={{ paddingTop: "8px", color: 'var(--imp-text-color)', fontWeight: 'bold' }}>Mercy Software Services</span>
-        </a>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
-            <li style={{ margin: '0 10px' }}>
-              <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-                Home
-              </Link>
-            </li>
-            <li style={{ margin: '0 10px' }}>
-              <Link to="/objectives" style={{ textDecoration: 'none', color: 'inherit' }}>
-                Objectives
-              </Link>
-            </li>
-            <li style={{ margin: '0 10px' }}>
-              <Link to="/service" style={{ textDecoration: 'none', color: 'inherit' }}>
-                Services
-              </Link>
-            </li>
-          </ul>
-          <div style={{ display: 'flex', marginLeft: '20px' }}>
-            <button style={{ margin: '0 5px', padding: '5px 10px' }}>EN</button>
-            <button style={{ margin: '0 5px', padding: '5px 10px' }}>FR</button>
-            <button style={{ margin: '0 5px', padding: '5px 10px' }}>AR</button>
-          </div>
+    <Navbar
+      expanded={expand}
+      fixed="top"
+      expand="md"
+      className={navColour ? "sticky" : "navbar"}
+    >
+      <Container>
+        <Navbar.Brand href="/" className="d-flex">
+          <img src={logo} className="img-fluid " alt="brand" style={{ height: "45px", width: "45px", marginRight: "30px"  }} />
+          <span className="navbar-brand-text purple fw-bold" style={{ paddingTop: "8px" }}   > {t('navbar.brand')}</span>
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => {
+            updateExpanded(expand ? false : "expanded");
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto" defaultActiveKey="#home">
+            <Nav.Item>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t('navbar.home')}
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/objectives"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.objectives')}
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/service"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                {t('navbar.services')}
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+        <div className="d-flex ms-2">
+          <Button variant="primary" size="sm" className="me-2">EN</Button>
+          <Button variant="primary" size="sm" className="me-2">FR</Button>
+          <Button variant="primary" size="sm">AR</Button>
         </div>
-      </div>
-    </nav>
+      </Container>
+    </Navbar>
   );
 }
 

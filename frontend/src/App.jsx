@@ -39,7 +39,6 @@ function App() {
       const link = document.createElement('link');
       link.rel = 'stylesheet';
       link.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css';
-      link.integrity = 'sha384-...'; // Add integrity if needed
       document.head.appendChild(link);
     } else {
       // Remove RTL CSS if switching back
