@@ -31,7 +31,7 @@
     "website": "Website:"
   },
   "services": {
-    "discoverServices": "Discover Our Services",
+    "discoverServices": "Discover Our <span class=\"purple\">Services</span>",
     "servicesText": "Explore a collection of services designed to elevate your digital presence. From web development to comprehensive CMS solutions, our offerings are tailored to meet your unique business needs. Dive in to see how we can help transform your ideas into reality.",
     "ourServices": "Our Services",
     "letsConnect": "Let's <span class=\"purple\">Connect",

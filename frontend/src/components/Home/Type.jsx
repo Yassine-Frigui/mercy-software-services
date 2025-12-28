@@ -9,7 +9,7 @@ function Type() {
       options={{
         strings: [
           
-          "KYS KYS KYS"
+          "Mercy Software Services",
         ],
         autoStart: true,
         loop: true,

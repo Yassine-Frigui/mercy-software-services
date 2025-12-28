@@ -13,9 +13,9 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              {t('home2.ourMission')} <span className="purple"> {t('home2.ourMission').split(' ')[1]} </span> 
+              <p className="home-about-title" dangerouslySetInnerHTML={{ __html: t('home2.ourMission') }} />
             </h1>
-            <p className="home-about-body" dangerouslySetInnerHTML={{ __html: t('home2.missionText') }}>
+            <p className="home-about-body text-start" dangerouslySetInnerHTML={{ __html: t('home2.missionText') }}>
             </p>
           </Col>
           <Col md={4} className="myAvtar">

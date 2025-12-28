@@ -18,7 +18,7 @@
     "company": "Mercy Software Services"
   },
   "home2": {
-    "ourMission": "Notre Mission",
+    "ourMission": "Notre <span class=\"purple\"> Mission </span> ",
     "missionText": "Mercy Software Services fournit des solutions web modernes, fiables et sur mesure pour les entreprises cherchant une présence en ligne forte et efficace. Nous nous spécialisons dans le <span class=\"purple\">développement web</span>, <span class=\"purple\">l'intégration CMS</span> et les <span class=\"purple\">Dashboards personnalisés</span>, avec un focus sur la clarté, les performances et l'évolutivité. Chaque projet est abordé avec un état d'esprit pratique, assurant des solutions faciles à gérer, alignées sur les objectifs commerciaux et conçues pour évoluer avec le temps."
   },
   "objectives": {
@@ -31,7 +31,7 @@
     "website": "Site Web :"
   },
   "services": {
-    "discoverServices": "Découvrez Nos Services",
+    "discoverServices": "Découvrez Nos <span class=\"purple\">Services</span>",
     "servicesText": "Explorez une collection de services conçus pour élever votre présence numérique. Du développement web aux solutions CMS complètes, nos offres sont adaptées à vos besoins commerciaux uniques. Plongez pour voir comment nous pouvons vous aider à transformer vos idées en réalité.",
     "ourServices": "Nos Services",
     "letsConnect": "Connectons-<span class=\"purple\">nous</span>",

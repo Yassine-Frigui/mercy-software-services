@@ -22,14 +22,14 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header">
-            <div style={{ padding: 50, textAlign: "left" }}>
+            <Col md={7} className="home-header" style={{ padding:50 }}>
+            <div className="text-start" style={{ paddingBottom: 50 }}>
                 <Type />
               </div>
            
-              <h1 className="heading-name">
+              <h1 className="heading-name text-start">
                 {t('home.yourVision')} , 
-                <strong className="main-name"> {t('home.ourMission')}</strong>
+                <strong className="main-name text-star"> {t('home.ourMission')}</strong>
               </h1>
 
 
@@ -37,8 +37,8 @@ function Home() {
               <h1 style={{ paddingTop: 50 }} className="heading purple  ">
 
 
-                <div className="word-viewport">
-                  <div className="word-wheel">
+                <div className="word-viewport text-start-wheel">
+                  <div className="word-wheel ">
                       <span >{t('home.inspiration')}</span>
                       <span >{t('home.innovation')}</span>
                       <span >{t('home.vision')}</span>

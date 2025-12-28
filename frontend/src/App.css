@@ -61,3 +61,14 @@
 .rtl .text-justify {
   text-align: justify;
 }
+
+/* LTR Support */
+.ltr .text-start {
+  text-align: left !important;
+  padding-left: 55px;
+}
+
+.ltr .text-start-wheel {
+  text-align: left !important;
+  padding-right: 50px;
+}

@@ -148,9 +148,9 @@ Phone: ${payload.phone || 'Not provided'}
         <Row className="align-items-center">
           <Col md={7}>
             <h1 style={{ fontSize: "3rem", paddingBottom: "20px", color: "white" }}>
-              {t('services.discoverServices')} <strong className="purple">{t('services.discoverServices').split(' ')[2]}</strong>
+              <span dangerouslySetInnerHTML={{ __html: t('services.discoverServices') }} /> 
             </h1>
-            <p style={{ color: "white", fontSize: "1.2rem", textAlign: "justify" }}>
+            <p className="text-start" style={{ color: "white", fontSize: "1.2rem" }}>
               {t('services.servicesText')}
             </p>
           </Col>
@@ -189,7 +189,7 @@ Phone: ${payload.phone || 'Not provided'}
         {/* Section Before Form */}
         <div className="mt-5 text-center">
           <h1 className="service-heading">
-            {t('services.letsConnect')} <strong className="purple">{t('services.letsConnect').split(' ')[1]}</strong>
+            <p dangerouslySetInnerHTML={{ __html: t('services.letsConnect') }} />
           </h1>
           <p className="text-white">
             {t('services.connectText')}
