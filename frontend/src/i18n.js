@@ -4,7 +4,6 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 import en from './Assets/translations/english.json';
 import fr from './Assets/translations/french.json';
-import ar from './Assets/translations/arabic.json';
 
 const resources = {
     en: {
@@ -12,17 +11,8 @@ const resources = {
     },
     fr: {
         translation: fr
-    },
-    ar: {
-        translation: ar
     }
 };
-
-// RTL support for Arabic
-i18n.on('languageChanged', (lng) => {
-    document.documentElement.dir = lng === 'ar' ? 'rtl' : 'ltr';
-});
-//rtl if arabic language is selected
 
 
 
