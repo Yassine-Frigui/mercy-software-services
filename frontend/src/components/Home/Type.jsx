@@ -8,7 +8,8 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          t('type.company'),
+          
+          "KYS KYS KYS"
         ],
         autoStart: true,
         loop: true,
