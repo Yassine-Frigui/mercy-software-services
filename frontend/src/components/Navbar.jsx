@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 import logo from "/logo_.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -14,7 +13,6 @@ import {
 } from "react-icons/ai";
 
 function NavBar() {
-  const { t, i18n } = useTranslation();
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -42,7 +40,7 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid " alt="brand" style={{ height: "45px", width: "45px", marginRight: "30px"  }} />
-          <span className="navbar-brand-text purple fw-bold" style={{ paddingTop: "8px" }}   > {t('navbar.brand')}</span>
+          <span className="navbar-brand-text purple fw-bold" style={{ paddingTop: "8px" }}   >Mercy Software Services</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -58,7 +56,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t('navbar.home')}
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -68,7 +66,7 @@ function NavBar() {
                 to="/objectives"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.objectives')}
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Objectives
               </Nav.Link>
             </Nav.Item>
 
@@ -81,7 +79,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                {t('navbar.services')}
+                Services
               </Nav.Link>
             </Nav.Item>
           </Nav>
