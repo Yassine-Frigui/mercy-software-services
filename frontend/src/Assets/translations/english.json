@@ -15,7 +15,8 @@
     "findUsOn": "Find Us On"
   },
   "type": {
-    "company": "Mercy Software Services"
+    "company": "Mercy Software Services",
+    "strings": ["Full Stack Developer", "UI/UX Designer", "Software Engineer"]
   },
   "home2": {
     "ourMission": "Our <span class=\"purple\"> Mission </span> ",
