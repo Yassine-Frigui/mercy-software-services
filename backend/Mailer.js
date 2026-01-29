@@ -192,4 +192,49 @@ router.post('/quotes/submit', async (req, res) => {
   res.json({ success: true, message: 'Quote submitted successfully', quoteId: newQuote.id });
 });
 
+// API to test Brevo API key
+router.get('/test-email', async (req, res) => {
+  try {
+    const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
+    
+    const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
+    
+    sendSmtpEmail.subject = "Brevo API Test - Mercy Software Services";
+    sendSmtpEmail.htmlContent = `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #333;">Brevo API Test Successful! ✅</h2>
+        
+        <div style="background-color: #e8f5e8; padding: 20px; margin: 20px 0; border-radius: 5px; border-left: 4px solid #4CAF50;">
+          <p><strong>Test Time:</strong> ${new Date().toLocaleString()}</p>
+          <p><strong>Server:</strong> VPS Production</p>
+          <p><strong>Status:</strong> API Key is working correctly</p>
+        </div>
+        
+        <p style="color: #666;">
+          This is a test email to verify Brevo API integration is working properly.
+        </p>
+      </div>
+    `;
+    sendSmtpEmail.sender = { "name": "Mercy Software Services", "email": "noreply@mercy-software-services.duckdns.org" };
+    sendSmtpEmail.to = [{ "email": "yassinefrigui9@gmail.com", "name": "Yassine Frigui" }];
+    
+    const data = await apiInstance.sendTransacEmail(sendSmtpEmail);
+    console.log('Test email sent successfully:', data);
+    
+    res.json({ 
+      success: true, 
+      message: 'Test email sent successfully!', 
+      emailId: data.messageId,
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    console.error('Test email failed:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: 'Test email failed', 
+      error: error.message 
+    });
+  }
+});
+
 module.exports = router;
