@@ -35,7 +35,7 @@ function NavBar() {
     i18n.changeLanguage(lng);
   };
 
-  const currentLanguage = i18n.language;
+  const currentLanguage = i18n.language || 'en';
 
   return (
     <Navbar
@@ -92,7 +92,7 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
         <Dropdown className="d-flex ms-2">
-          <Dropdown.Toggle variant="outline-light" size="sm" id="language-dropdown">
+          <Dropdown.Toggle variant="light" size="sm" id="language-dropdown">
             <FaGlobe style={{ marginRight: "5px" }} /> {currentLanguage.toUpperCase()}
           </Dropdown.Toggle>
           <Dropdown.Menu>
