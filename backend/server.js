@@ -3,12 +3,15 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: process.env.FRONTEND_URL || 'http://localhost:3000'
+}));
 app.use(bodyParser.json());
 
 // Path to drafts file
@@ -73,6 +76,68 @@ app.get('/api/drafts/:sessionId', (req, res) => {
   } else {
     res.status(404).json({ error: 'Draft not found' });
   }
+});
+
+// Path to quotes file
+const quotesFile = path.join(__dirname, 'quotes.json');
+
+// Helper to read quotes
+const readQuotes = () => {
+  if (!fs.existsSync(quotesFile)) {
+    return [];
+  }
+  const data = fs.readFileSync(quotesFile, 'utf8');
+  return JSON.parse(data);
+};
+
+// Helper to write quotes
+const writeQuotes = (quotes) => {
+  fs.writeFileSync(quotesFile, JSON.stringify(quotes, null, 2));
+};
+
+
+// API to submit quote
+app.post('/api/quotes/submit', (req, res) => {
+  const { websiteType, designLevel, cms, extraFeatures, totalEstimatedPrice, email, phone, sessionId } = req.body;
+
+  // Basic Validation
+  if (!email || !phone) {
+    return res.status(400).json({ error: 'Email and Phone are required' });
+  }
+
+  const quotes = readQuotes();
+
+  const newQuote = {
+    id: Date.now().toString(), // Simple ID generation
+    sessionId: sessionId || null,
+    websiteType,
+    designLevel,
+    cms,
+    extraFeatures,
+    totalEstimatedPrice,
+    email,
+    phone,
+    status: 'pending', // pending, reviewed, accepted, rejected
+    submittedAt: new Date().toISOString()
+  };
+
+  quotes.push(newQuote);
+  writeQuotes(quotes);
+
+  // Optional: If sessionId is present, maybe update the draft status to 'submitted'
+  if (sessionId) {
+    const drafts = readDrafts();
+    const draftIndex = drafts.findIndex(d => d.sessionId === sessionId);
+    if (draftIndex !== -1) {
+      drafts[draftIndex].status = 'submitted';
+      writeDrafts(drafts);
+    }
+  }
+
+  // Here you would typically trigger an email notification
+  console.log('New Quote Submitted:', newQuote);
+
+  res.json({ success: true, message: 'Quote submitted successfully', quoteId: newQuote.id });
 });
 
 app.listen(PORT, () => {
