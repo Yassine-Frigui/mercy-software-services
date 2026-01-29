@@ -1,0 +1,253 @@
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+Error: Cannot find module 'express'
+Require stack:
+- /home/ubuntu/mercy-software-services/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/ubuntu/mercy-software-services/backend/server.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at /usr/lib/node_modules/pm2/lib/ProcessContainer.js:292:27
+    at wrapper (/usr/lib/node_modules/pm2/node_modules/async/internal/once.js:12:16)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+Server running on http://localhost:5001
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+Server running on http://localhost:5001
+New Quote Submitted: {
+  id: '1769705094150',
+  sessionId: '1769703523503-m6xdozntk7',
+  websiteType: 'basic',
+  designLevel: 'standard',
+  cms: 'Custom Admin Dashboard',
+  extraFeatures: [ 'seo' ],
+  totalEstimatedPrice: '1300-1800',
+  email: 'yassinefrigui9@gmail.com',
+  phone: '11122233',
+  status: 'pending',
+  submittedAt: '2026-01-29T16:44:54.150Z'
+}
+New Quote Submitted: {
+  id: '1769705284410',
+  sessionId: '1769705095158-mu3kwpj9kg',
+  websiteType: 'basic',
+  designLevel: 'standard',
+  cms: 'Not selected',
+  extraFeatures: [ 'seo' ],
+  totalEstimatedPrice: 800,
+  email: 'riff3183@gmail.com',
+  phone: '11223344',
+  status: 'pending',
+  submittedAt: '2026-01-29T16:48:04.410Z'
+}
+New Quote Submitted: {
+  id: '1769705284418',
+  sessionId: '1769705095158-mu3kwpj9kg',
+  websiteType: 'basic',
+  designLevel: 'standard',
+  cms: 'Not selected',
+  extraFeatures: [ 'seo' ],
+  totalEstimatedPrice: 800,
+  email: 'riff3183@gmail.com',
+  phone: '11223344',
+  status: 'pending',
+  submittedAt: '2026-01-29T16:48:04.418Z'
+}
+[dotenv@17.2.3] injecting env (1) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Server running on http://localhost:5001

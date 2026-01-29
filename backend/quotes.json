@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1769705094150",
+    "sessionId": "1769703523503-m6xdozntk7",
+    "websiteType": "basic",
+    "designLevel": "standard",
+    "cms": "Custom Admin Dashboard",
+    "extraFeatures": [
+      "seo"
+    ],
+    "totalEstimatedPrice": "1300-1800",
+    "email": "yassinefrigui9@gmail.com",
+    "phone": "11122233",
+    "status": "pending",
+    "submittedAt": "2026-01-29T16:44:54.150Z"
+  },
+  {
+    "id": "1769705284410",
+    "sessionId": "1769705095158-mu3kwpj9kg",
+    "websiteType": "basic",
+    "designLevel": "standard",
+    "cms": "Not selected",
+    "extraFeatures": [
+      "seo"
+    ],
+    "totalEstimatedPrice": 800,
+    "email": "riff3183@gmail.com",
+    "phone": "11223344",
+    "status": "pending",
+    "submittedAt": "2026-01-29T16:48:04.410Z"
+  },
+  {
+    "id": "1769705284418",
+    "sessionId": "1769705095158-mu3kwpj9kg",
+    "websiteType": "basic",
+    "designLevel": "standard",
+    "cms": "Not selected",
+    "extraFeatures": [
+      "seo"
+    ],
+    "totalEstimatedPrice": 800,
+    "email": "riff3183@gmail.com",
+    "phone": "11223344",
+    "status": "pending",
+    "submittedAt": "2026-01-29T16:48:04.418Z"
+  }
+]
